@@ -1,7 +1,7 @@
 {
-  "name": "aop-jsconf-2013",
+  "name": "aop-s2gx-2013",
   "version": "0.1.0",
-  "description": "JSConf 2013: Connecting your shiz.js with AOP",
+  "description": "S2GX 2013: AOP-ing your JavaScript",
   "keywords": [
     "jsconf",
     "aop",
@@ -14,12 +14,10 @@
       "url": "http://www.opensource.org/licenses/mit-license.php"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/briancavalier/aop-jsconf-2013"
-    }
-  ],
+  "repository": {
+	"type": "git",
+    "url": "https://github.com/briancavalier/aop-jsconf-2013"
+  },
   "bugs": "https://github.com/briancavalier/aop-jsconf-2013/issues",
   "maintainers": [
     {
