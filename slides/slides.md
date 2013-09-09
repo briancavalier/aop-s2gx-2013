@@ -1,9 +1,70 @@
-# Connecting your shiz.js with AOP
+# Outline
+
+1. AOP Overview/reminder
+2. AOP in JavaScript
+3. Connecting application components
+4. Application composition
+
+AOP
+
+Program transformation that combines unrelated concerns
+
+WUT
+
+Non-invasively augment or modify the behavior of existing code (objects, methods, functions, etc.)
+
+Most times the augmented/modified behavior deals with a concern that is *unrelated* to the core function of the code being modified.
+
+They're a side-effect
+
+Examples:
+
+- Logging
+- Profiling
+- Transaction demarcation
+- Security
+
+Similar but different:
+- Inheritance
+- Delegation/composition
+
+AOP is tricky to implement in other languages: Java, .NET, but is easy in JavaScript
+
+Java - Source code transformation, or need Proxies, or bytecode transformations
+
+JavaScript has neither Proxies (yet) nor access to bytecode!
+
+Turns out, it can be quite simple in JS, but what we've found is
+
+1. Don't know the technique exists, or don't understand it
+2. Apply the technique, or *almost* apply it but don't know they are
+3. Know the technique, but don't know how to apply it in JavaScript
+
+1. Source code transformation
+2. AST transformation
+3. Method replacement
+
+```js
+var orig = thing.method;
+
+thing.method = function() {
+	doAdditionalStuff();
+	return orig.apply(this, arguments);
+}
+```
+
+Possible future directions
+
+Modules and load-time weaving
+Pointcut expression language
+
+
+# AOP-ing your JavaScript
 
 ## Brian Cavalier [@briancavalier](http://twitter.com/briancavalier)
 
-* [cujoJS](http://cujojs.com) co-lead & Spring Javascript @ Pivotal
-* http://github.com/briancavalier/aop-jsconf-2013
+* Spring Javascript @ Pivotal & [cujoJS](http://cujojs.com) co-lead
+* http://github.com/briancavalier/aop-s2gx-2013
 
 ---
 
@@ -11,7 +72,6 @@
 
 * AOP
 * Application Composition
-	* aka Connecting your shiz.js
 
 ---
 
@@ -19,21 +79,21 @@
 
 ## Aspect Oriented Programming
 
-## Coz you came to JSConf to learn more TLAs
-
----
-
-# AOP
-
-* *What* Oriented Programming?
-* What's an aspect?
-
 ---
 
 # AOP
 
 * Aspect: Some encapsulated unit of behavior
 * AOP: Technique for composing units of behavior
+
+---
+
+# AOP
+
+* Encapsulating/modularizing behaviors
+* Expressing where and when these behaviors are applied
+	* E.g. AspectJ expression-based pointcuts
+	* Requires metadata
 
 ---
 
@@ -59,7 +119,7 @@ var orig = thing.method;
 
 thing.method = function() {
 	doAdditionalStuff();
-	return orig.apply(thing, arguments);
+	return orig.apply(this, arguments);
 }
 ```
 
@@ -107,7 +167,7 @@ thing.method = function() {
 
 # Application Composition
 
-## Connecting application components together to make a particular application
+## Connecting reusable components together to make a particular application
 
 * Now *that* sounds useful
 * It also sounds a lot like AOP: "composing units of behavior"
