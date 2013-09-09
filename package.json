@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "description": "S2GX 2013: AOP-ing your JavaScript",
   "keywords": [
-    "jsconf",
     "aop",
-    "aspect oriented programming"
+    "aspect oriented programming",
+    "s2gx",
+    "SpringOne",
+    "SpringSource"
   ],
   "homepage": "http://cujojs.com",
   "licenses": [
@@ -16,9 +18,9 @@
   ],
   "repository": {
 	"type": "git",
-    "url": "https://github.com/briancavalier/aop-jsconf-2013"
+    "url": "https://github.com/briancavalier/aop-s2gx-2013"
   },
-  "bugs": "https://github.com/briancavalier/aop-jsconf-2013/issues",
+  "bugs": "https://github.com/briancavalier/aop-s2gx-2013/issues",
   "maintainers": [
     {
       "name": "Brian Cavalier",
