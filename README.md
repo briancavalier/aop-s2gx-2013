@@ -1,4 +1,4 @@
-Connecting your shiz.js with AOP @ JSConf 2013
+AOPing your JavaScript @ SpringOne 2GX 2013
 
 * Slides
 * Examples
@@ -6,4 +6,4 @@ Connecting your shiz.js with AOP @ JSConf 2013
 
 ---
 
-Copyright 2013 Brian Cavalier
+Copyright 2013 Pivotal, Inc.
