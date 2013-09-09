@@ -6,4 +6,5 @@ AOPing your JavaScript @ SpringOne 2GX 2013
 
 ---
 
-Copyright 2013 Pivotal, Inc.
+Code: Copyright 2013 Brian Cavalier
+Slides: Copyright 2013 SpringOne 2GX
