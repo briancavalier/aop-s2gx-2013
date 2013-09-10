@@ -17,8 +17,9 @@ Modern browsers, please: Chrome, Safari and FF latest, IE 10.  All of the AOP an
 ## Running the apps
 
 1. Clone the repo
-1. Run `npm install` from the root dir of the repo (*not* the `demo-app` dir)
-1. Run `npm start`
+1. From the root dir of the repo:
+	1. `npm install`
+	1. `npm start`
 1. Open the corresponding url in your browser:
 	- [vanilla](http://localhost:8000/demo-app/#vanilla) - http://localhost:8000/demo-app/#vanilla
 	- [events](http://localhost:8000/demo-app/#events) - http://localhost:8000/demo-app/#events
