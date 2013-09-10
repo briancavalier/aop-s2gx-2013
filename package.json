@@ -35,7 +35,7 @@
   ],
   "dependencies": {
     "meld": "~1",
-    "serv": "0.0.7"
+    "serv": "~0"
   },
   "devDependencies": {
     "bower": "~1",
@@ -47,6 +47,7 @@
   },
   "scripts": {
     "prepublish": "bower install",
-    "test": "jshint . && buster test -e node"
+    "test": "jshint . && buster test -e node",
+    "start": "serv"
   }
 }
