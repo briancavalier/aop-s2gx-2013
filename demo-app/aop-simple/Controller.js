@@ -1,10 +1,9 @@
 (function(define) {
 define(function(require) {
 
-	var when, delay;
+	var when;
 
 	when = require('when');
-	delay = require('when/delay');
 
 	function Controller() {}
 
